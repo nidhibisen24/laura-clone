@@ -1,0 +1,45 @@
+ .satisfy-regular {
+    font-family: "Satisfy",cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .image{
+    margin-left:7% !important;
+  }
+  .advance{
+    overflow: hidden !important;
+  }
+
+  .body{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  }
+  body.scrolled .navbar {
+    background-color:black !important;
+    opacity:0.75;
+    z-index: 20;
+    height:5px;
+    padding-top:-4px;
+  }
+.navbar{
+  background-color: transparent !important;
+  transition: background-color 1s ease-in-out !important;
+}
+.lorem-box {
+  box-shadow:0 0 30px rgba(214, 215, 216, 0.6);
+}
+.lorem-box-1 {
+  box-shadow:0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+  /* media */
+ @media screen and (max-width:425px) 
+{
+  .image{
+    margin-left:0 !important;
+    width:100% !important;
+  }
+} 
+
+
+

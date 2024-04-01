@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- flowbite link  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body class="m-0 p-0">
+
+    <!-- header section start -->
+    <section class="w-[100%] h-screen max-sm:h-[110vh] relative">
+        <article
+            class="w-full h-full absolute bg-cover bg-[url(https://bootstrapmade.com/demo/templates/Laura/assets/img/hero-bg.jpg)] bg-fixed">
+        </article>
+        <!-- here,s content  -->
+        <article class=" w-full h-full absolute bg-black/[0.65]">
+            <!-- nav start  -->
+            <nav class="navbar fixed left-0 w-full ">
+                <div class=" max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 py-5">
+                    <button data-collapse-toggle="navbar-multi-level" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none"
+                        aria-controls="navbar-multi-level" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto " id="navbar-multi-level">
+                        <ul
+                            class="flex flex-col font-medium p-4 md:p-0 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                            <li><a href="#"
+                                    class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0 md:text-[#ffb727] md:dark:bg-transparent text-xs tracking-wider"
+                                    aria-current="page">HOME</a></li>
+                            <li><a href="#about"
+                                    class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-[#ffb727] md:p-0 dark:text-white md:dark:hover:text-[#ffb727] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xs tracking-wider">ABOUT</a>
+                            </li>
+                            <li><a href="#resume"
+                                    class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-[#ffb727] md:p-0 dark:text-white md:dark:hover:text-[#ffb727] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xs tracking-wider">RESUME</a>
+                            </li>
+                            <li><a href="#service"
+                                    class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-[#ffb727] md:p-0 dark:text-white md:dark:hover:text-[#ffb727] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xs tracking-wider">SERVICES</a>
+                            </li>
+                            <li><a href="#portfolio"
+                                    class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-[#ffb727] md:p-0 dark:text-white md:dark:hover:text-[#ffb727] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xs tracking-wider">PORTFOLIO</a>
+                            </li>
+                            <!-- drop down start -->
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                data-dropdown-trigger="hover"
+                                class="text-white focus:outline-none font-medium rounded-lg text-xs tracking-wider inline-flex items-center md:hover:text-[#ffb727]"
+                                type="button">DROP DOWN<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu hover-->
+                            <div id="dropdownHover"
+                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownHoverButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Drop
+                                            down 1</a>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
+                                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="doubleDropdownButton">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
+                                                        downloads</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deep
+                                            Drop Down 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">DROP
+                                            DOWN 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">DROP
+                                            DOWN 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- drop down end -->
+                            <li><a href="#contact"
+                                    class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-[#ffb727] md:p-0 dark:text-white md:dark:hover:text-[#ffb727] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-xs tracking-wider">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- nav end  -->
+            <!-- middle part start -->
+            <div class="flex flex-col justify-center items-center w-full h-full">
+                <div class="satisfy-regular text-[64px] text-white">
+                    <p class="text-[64px] max-sm:text-[34px]">Laura Thomson</p>
+                </div>
+                <p class="text-[#eeeeee] text-[13px] max-sm:text-[10px] tracking-widest">I'M A PROFESSIONAL PHOTOGRAPHER
+                    IN NEW YORK CITY</p><br><br><br>
+                <h1><a href="#about"><i
+                            class="fa-solid fa-chevron-down  text-white/[60.0%] text-2xl  ease-in animate-bounce hover:text-[#ffb727]"></i></a>
+                </h1>
+            </div>
+        </article>
+    </section>
+    <!-- header section end -->
+
+    <!-- about section start -->
+    <section id="about">
+        <div class="text-center m-10">
+            <div class="relative text-center">
+                <p
+                    class="absolute w-full flex justify-center items-center lg:text-6xl text-[#eef0f2;] font-bold lg:md:text-6xl text-[#eef0f2;] font-bold max-sm:text-4xl text-[#eef0f2;] font-bold">
+                    ABOUT ME</p>
+                <p
+                    class="absolute w-full flex justify-center items-center max-sm:mt-4 lg:md:mt-8 font-bold lg:text-3xl text-[#3b434a] md:text-3xl max-sm:text-2xl">
+                    ABOUT ME
+                </p>
+            </div>
+            <br>
+            <p class="pt-16 text-[#444444] text-[18px]">Sit sint consectetur velit quisquam cupiditate impedit suscipit
+                alias</p>
+        </div>
+    </section>
+    <!-- img-section -->
+    <section class="lg:flex lg:px-10 lg:ml-[-2rem]">
+        <div class="image ">
+            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/me.jpg" alt="" width="100%"
+                height="100%">
+        </div>
+        <div class="max-sm:ml-[7%] lg:ml-[3%] max-sm:mt-5 lg:mt-0">
+            <div class="lg:flex gap-40">
+                <ul>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg "><span
+                                class=" font-semibold text-lg">Name:</span>&nbsp; Laura Thomson</p>
+                    </li>
+                    <li class="flex gap-3 mt-4">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">Website:</span>&nbsp; www.example.com</p>
+                    </li>
+                    <li class="flex gap-3 mt-4">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">Phone:</span>&nbsp; +123 456 7890</p>
+                    </li>
+                    <li class="flex gap-3 mt-4">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">City:</span>&nbsp; New York, USA</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="flex gap-3 max-sm:mt-4 lg:mt-0">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">Age:</span>&nbsp; 30</p>
+                    </li>
+                    <li class="flex gap-3 mt-4">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">Master:</span>&nbsp; Master</p>
+                    </li>
+                    <li class="flex gap-3 mt-4">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">PhEmailone:</span>&nbsp; email@example.com</p>
+                    </li>
+                    <li class="flex gap-3 mt-4">
+                        <i class="fa-solid fa-greater-than" style="color: #ffd43b;"></i>
+                        <p class="max-sm:mt-[-0.4rem] lg:mt-[-0.3rem] text-[#444444] text-lg"><span
+                                class=" font-semibold text-lg">Freelance:</span>&nbsp; Available</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- logo section with text -->
+            <div class="bg-white py-6 max-sm:py-8 lg:py-8">
+                <div class="mx-auto max-w-screen-xl lg:ml-[-1rem] md:pl-2">
+                    <div
+                        class="grid gap-10 max-sm:grid-cols-1 max-sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-6 max-sm:mr-10">
+                        <!-- article - start -->
+                        <div class="flex  gap-4 md:flex-row lg:gap-4 lg:mr-10 max-sm:mr-0">
+                            <i class="bi bi-emoji-smile mt-[-0.5rem]" style="color:#20b38e; font-size:37px"></i>
+                            <div class="flex flex-col gap-2">
+                                <h1 class="text-4xl font-bold text-gray-800">
+                                    <a href="#" class="transition duration-100 hover:text-indigo-500 text-[#3b434a]">232
+                                    </a>
+                                </h1>
+                                <p class="text-gray-500 text-sm"> <span class="text-base font-bold">Happy Clients
+                                    </span>consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                            </div>
+                        </div>
+                        <!-- article - end -->
+
+                        <!-- article - start -->
+                        <div class="flex  gap-4 md:flex-row lg:gap-6 lg:mr-10 max-sm:mr-0">
+                            <i class="bi bi-emoji-smile mt-[-0.5rem]" style="color:#20b38e; font-size:37px"></i>
+                            <div class="flex flex-col gap-2">
+                                <h1 class="text-4xl font-bold text-gray-800">
+                                    <a href="#" class="transition duration-100 hover:text-indigo-500 text-[#3b434a]">521
+                                    </a>
+                                </h1>
+                                <p class="text-gray-500 text-sm"> <span class="text-base font-bold">Projects
+                                    </span>adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                            </div>
+                        </div>
+                        <!-- article - end -->
+
+                        <!-- article - start -->
+                        <div class="flex  gap-4 md:flex-row lg:gap-6 lg:mr-8 max-sm:mr-0">
+                            <i class="bi bi-clock mt-[-0.5rem]" style="color:#2cbdee; font-size:37px"></i>
+                            <div class="flex flex-col gap-2">
+                                <h1 class="text-4xl font-bold text-gray-800">
+                                    <a href="#"
+                                        class="transition duration-100 hover:text-indigo-500 text-[#3b434a]">18</a>
+                                </h1>
+                                <p class="text-gray-500 text-sm"> <span class="text-base font-bold">Years of experience
+                                    </span> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                            </div>
+                        </div>
+                        <!-- article - end -->
+
+                        <!-- article - start -->
+                        <div class="flex  gap-4 md:flex-row lg:gap-6 lg:mr-10 max-sm:mr-0">
+                            <i class="bi bi-award mt-[-0.5rem]" style="color:#ffb459; font-size:37px"></i>
+                            <div class="flex flex-col gap-2">
+                                <h1 class="text-4xl font-bold text-gray-800">
+                                    <a href="#" class="transition duration-100 hover:text-indigo-500 text-[#3b434a]">16
+                                    </a>
+                                </h1>
+                                <p class="text-gray-500 text-sm"> <span class="text-base font-bold">Awards </span> rerum
+                                    asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                            </div>
+                        </div>
+                        <!-- article - end -->
+                    </div>
+                </div>
+            </div>
+            <!-- progress bar -->
+            <div class="mt-[-0.5rem]">
+                <div class="flex justify-between mb-4 mr-5">
+                    <span class="text-xs font-medium text-gray-600 dark:text-white">HTML</span>
+                    <span class="text-xs font-medium text-gray-600 dark:text-white pr-16">100%</span>
+                </div>
+                <div class=" bg-gray-200 h-2.5 dark:bg-gray-700 mr-16">
+                    <div class="bg-[#ffb727] h-2.5" style="width: 100%"></div>
+                </div>
+                <div class="flex justify-between mb-4 mt-4 mr-5">
+                    <span class="text-xs font-medium text-gray-600 dark:text-white">CSS</span>
+                    <span class="text-xs font-medium text-gray-600 dark:text-white pr-16">90%</span>
+                </div>
+                <div class=" bg-gray-200 h-2.5 dark:bg-gray-700 mr-16">
+                    <div class="bg-[#ffb727] h-2.5" style="width: 90%"></div>
+                </div>
+                <div class="flex justify-between mb-4 mt-4 mr-5">
+                    <span class="text-xs font-medium text-gray-600 dark:text-white">JAVASCRIPT</span>
+                    <span class="text-xs font-medium text-gray-600 dark:text-white pr-16">75%</span>
+                </div>
+                <div class=" bg-gray-200 h-2.5 dark:bg-gray-700 mr-16 mb-4">
+                    <div class="bg-[#ffb727] h-2.5" style="width: 75%"></div>
+                </div>
+            </div>
+            <!-- progress bar -->
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- resume section start -->
+    <section id="resume">
+        <div class="text-center mt-24 mb-14">
+            <div class="relative text-center">
+                <p
+                    class="absolute w-full flex justify-center items-center lg:text-5xl text-[#eef0f2;] font-bold lg:md:text-6xl text-[#eef0f2;] font-bold max-sm:text-4xl text-[#eef0f2;] font-bold">
+                    MY RESUME</p>
+                <p
+                    class="absolute w-full flex justify-center items-center max-sm:mt-4 lg:md:mt-6 font-bold lg:text-3xl  text-[#3b434a]  md:text-3xl max-sm:text-2xl">
+                    MY RESUME
+                </p>
+            </div>
+            <br>
+            <p class="pt-16 text-[#444444] text-[18px]">Sit sint consectetur velit quisquam cupiditate impedit suscipit
+                alias</p>
+        </div>
+    </section>
+    <!-- timeline start  -->
+    <div class="lg:md:grid lg:md:grid-cols-2 lg:md:ml-[5%] lg:md:mr-[5%]">
+        <div>
+            <p class="max-sm:ml-[11%] lg:ml-[8%] text-[#3b434a] text-[26px] font-bold">Sumary</p>
+            <ol class="relative border-s-2 border-[#82909c] max-sm:ml-[10%] lg:ml-[7%]">
+                <li class="mb-10 ms-4 pb-4">
+                    <div class="absolute w-4 h-4 border-2 bg-white rounded-full ml-[-1.5rem] border border-[#82909c]">
+                    </div>
+                    <h4 class="text-lg font-bold text-[#ffba2f] dark:text-white">ALICE BARKLEY</h4>
+                    <p class=" text-base font-medium text-base text-gray-500 italic mt-4 mb-4">Innovative and
+                        deadline-driven
+                        Graphic Designer with 3+ years of experience designing and developing user-centered
+                        digital/print marketing material from initial concept to final, polished deliverable.</p>
+                    <ol class="mt-4 list-disc ml-4 text-base text-gray-500">
+                        <li>
+                            <p>Portland par 127,Orlando, FL</p>
+                        </li>
+                        <li class="mt-2">
+                            <p>(123) 456-7891</p>
+                        </li>
+                        <li class="mt-2">
+                            <p>alice.barkley@example.com</p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <p class="max-sm:ml-[11%] lg:ml-[8%] mb-4 text-[#3b434a] text-[26px] font-bold">Education</p>
+            <ol class="relative border-s-2 border-[#82909c] max-sm:ml-[10%] lg:ml-[7%]">
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-4 h-4 border-2 bg-white rounded-full ml-[-1.5rem] border border-[#82909c]">
+                    </div>
+                    <h4 class="text-lg font-bold text-[#ffba2f] dark:text-white">MASTER OF FINE ARTS & GRAPHIC DESIGN
+                    </h4>
+                    <div class="w-28 bg-[#eef0f2] h-8 text-center font-sans text-sm mt-2 pt-1 mb-2">
+                        <p>2015 - 2016</p>
+                    </div>
+                    <p class=" text-base font-medium text-base text-gray-500 italic">Rochester Institute of Technology,
+                        Rochester, NY</p>
+                    <p class="text-base text-gray-500 mt-4">Qui deserunt veniam. Et sed aliquam labore tempore sed
+                        quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand
+                        markend</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-4 h-4 border-2 bg-white rounded-full ml-[-1.5rem] border border-[#82909c]">
+                    </div>
+                    <h4 class="text-lg font-bold text-[#ffba2f] dark:text-white">BACHELOR OF FINE ARTS & GRAPHIC DESIGN
+                    </h4>
+                    <div class="w-28 bg-[#eef0f2] h-8 text-center font-sans text-sm mt-2 pt-1 mb-2">
+                        <p>2015 - 2016</p>
+                    </div>
+                    <p class=" text-base font-medium text-base text-gray-500 italic">Rochester Institute of Technology,
+                        Rochester, NY</p>
+                    <p class="text-base text-gray-500 mt-4">Qui deserunt veniam. Et sed aliquam labore tempore sed
+                        quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand
+                        markend</p>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <p class="max-sm:ml-[11%] lg:ml-[5%] mb-4 text-[#3b434a] text-[26px] font-semibold">Professional Experience
+            </p>
+            <ol class="relative border-s-2 border-[#82909c] max-sm:ml-[10%] lg:ml-[7%]">
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-4 h-4 border-2 bg-white rounded-full ml-[-1.5rem] border border-[#82909c]">
+                    </div>
+                    <h4 class="text-lg font-bold text-[#ffba2f] dark:text-white">SENIOR GRAPHIC DESIGN SPECIALIST</h4>
+                    <div class="w-28 bg-[#eef0f2] h-8 text-center font-sans text-sm mt-2 pt-1 mb-2">
+                        <p>2015 - Present</p>
+                    </div>
+                    <p class=" text-base font-medium text-base text-gray-500 italic">Experion, New York, NY</p>
+                    <ol class="mt-4 list-disc ml-4 text-base text-gray-500">
+                        <li>
+                            <p>Lead in the design, development, and implementation of the graphic, layout, and
+                                production communication materials</p>
+                        </li>
+                        <li class="mt-2">
+                            <p>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of
+                                the project.</p>
+                        </li>
+                        <li class="mt-2">
+                            <p>Supervise the assessment of all graphic materials in order to ensure quality and accuracy
+                                of the design</p>
+                        </li>
+                        <li class="mt-2">
+                            <p>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</p>
+                        </li>
+                    </ol>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-4 h-4 border-2 bg-white rounded-full ml-[-1.5rem] border border-[#82909c]">
+                    </div>
+                    <h4 class="text-lg font-bold text-[#ffba2f] dark:text-white">GRAPHIC DESIGN SPECIALIST</h4>
+                    <div class="w-28 bg-[#eef0f2] h-8 text-center font-sans text-sm mt-2 pt-1 mb-2">
+                        <p>2015 - 2018</p>
+                    </div>
+                    <p class=" text-base font-medium text-base text-gray-500 italic">Stepping Stone Advertising, New
+                        York, NY</p>
+                    <ol class="mt-4 list-disc ml-4 text-lg text-gray-500">
+                        <li>
+                            <p>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                                advertisements).</p>
+                        </li>
+                        <li class="mt-2">
+                            <p>Managed up to 5 projects or tasks at a given time while under pressure </p>
+                        </li>
+                        <li class="mt-2">
+                            <p>Recommended and consulted with clients on the most appropriate graphic design
+                            </p>
+                        </li>
+                        <li class="mt-2">
+                            <p>Created 4+ design presentations and proposals a month for clients and account managers
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- timeline end -->
+    <!-- resume section end -->
+
+    <!-- service section start -->
+    <section id="service">
+        <div class="text-center mt-24 mb-14">
+            <div class="relative text-center">
+                <p
+                    class="absolute w-full flex justify-center items-center lg:text-5xl text-[#eef0f2;] font-bold lg:md:text-6xl text-[#eef0f2;] font-bold max-sm:text-4xl text-[#eef0f2;] font-bold">
+                    MY SERVICES</p>
+                <p
+                    class="absolute w-full flex justify-center items-center max-sm:mt-4 lg:md:mt-6 font-bold lg:text-3xl  text-[#3b434a] md:text-3xl max-sm:text-2xl">
+                    MY SERVICES
+                </p>
+            </div>
+            <br>
+            <p class="pt-16 text-[#444444] text-[18px]">Sit sint consectetur velit quisquam cupiditate impedit suscipit
+                alias</p>
+        </div>
+    </section>
+    <!-- card items -->
+    <div class="bg-white lg:px-[8.5rem] py-8 max-sm:py-8  lg:py-16">
+        <div class="mx-auto max-w-screen-2xl max-sm:px-6">
+            <div class=" justify-center items-center grid gap-4 md:gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-[-4rem]">
+                <!-- product - start -->
+                <div
+                    class="lorem-box-1 h-[330px] w-[250px] hover:border-[1px] hover:border-[#ffb727] hover:transition hover:ease-in hover:duration-200">
+                    <a href="#" class="group flex flex-col h-[370px] items-center justify-center mt-[-2rem]">
+                        <div
+                            class="text-[#ffb727] font-[400] w-[72px] h-[72px] bg-[#fff4df] rounded-[50%] flex justify-center items-center">
+                            <i class="fa-brands fa-dribbble fa-2xl" style="color: #ffb727;"></i>
+                        </div>
+                        <p
+                            class="text-[#111111] text-[18px] font-semibold mt-4  hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Lorem Ipsum</p>
+                        <p class="text-base text-gray-500 px-3 text-center mt-2">Voluptatum deleniti atque corrupti quos
+                            dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </a>
+                </div>
+                <!-- product - end -->
+
+                <!-- product - start -->
+                <div
+                    class="lorem-box-1 h-[330px] w-[250px] hover:border-[1px] hover:border-[#ffb727] hover:transition hover:ease-in hover:duration-200">
+                    <a href="#" class="group flex flex-col h-[370px] items-center justify-center p-4">
+                        <div
+                            class="text-[#ffb727] font-[400] w-[72px] h-[72px] bg-[#fff4df] rounded-[50%] flex justify-center items-center mt-[-5em]">
+                            <i class="fa-regular fa-file-lines fa-2xl" style="color: #ffb727;"></i>
+                        </div>
+                        <p
+                            class="text-[#111111] text-[18px] font-semibold mt-4  hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Sed ut perspiciatis</p>
+                        <p class="text-base text-gray-500 px-3 text-center mt-2">Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
+                    </a>
+                </div>
+                <!-- product - end -->
+
+                <!-- product - start -->
+                <div
+                    class="lorem-box-1 h-[330px] w-[250px] hover:border-[1px] hover:border-[#ffb727] hover:transition hover:ease-in hover:duration-200">
+                    <a href="#" class="group flex flex-col h-[370px] items-center justify-center p-4">
+                        <div
+                            class="text-[#ffb727] font-[600] text-4xl w-[72px] h-[72px] bg-[#fff4df] rounded-[50%] flex justify-center items-center mt-[-3rem]">
+                            <i class='bx bx-tachometer' style='color:#ffb727'></i>
+                        </div>
+                        <p
+                            class="text-[#111111] text-[18px] font-semibold mt-4  hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Magni Dolores</p>
+                        <p class="text-base text-gray-500 px-4 text-center mt-2">Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </a>
+                </div>
+                <!-- product - end -->
+
+                <!-- product - start -->
+                <div
+                    class="lorem-box-1 h-[330px] w-[250px] hover:border-[1px] hover:border-[#ffb727] hover:transition hover:ease-in hover:duration-200">
+                    <a href="#" class="group flex flex-col h-[370px] items-center justify-center p-4">
+                        <div
+                            class="text-[#ffb727] text-4xl font-[400] w-[72px] h-[72px] bg-[#fff4df] rounded-[50%] flex justify-center items-center mt-[-3rem]">
+                            <i class='bx bx-world' style='color:#ffb727'></i>
+                        </div>
+                        <p
+                            class="text-[#111111] text-[18px] font-semibold mt-4  hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Nemo Enim</p>
+                        <p class="text-base text-gray-500 px-3 text-center mt-2">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    </a>
+                </div>
+                <!-- product - end -->
+            </div>
+        </div>
+    </div>
+    <!-- service section end -->
+
+    <!-- crousel section start -->
+    <section class="w-full">
+        <article
+            class="w-full h-[27rem] absolute bg-cover bg-center bg-[url(https://bootstrapmade.com/demo/templates/Laura/assets/img/testimonials-bg.jpg)]">
+        </article>
+        <!--content-->
+
+        <div id="default-carousel" class=" absolute w-full h-[27rem] max-sm:h-[27rem] absolute bg-[#0e1011]/[0.7]"
+            data-carousel="slide">
+            <!-- Carousel wrapper bg-black/50-->
+            <div class="relative lg:h-[27rem] max-sm:h-[30rem] overflow-hidden rounded-lg md:h-[27rem]">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out flex flex-col items-center justify-center h-96 max-sm:h-[30rem] max-sm:mt-[-2.5rem] lg:mt-0"
+                    data-carousel-item>
+                    <div>
+                        <div class="w-[95px] h-[95px] rounded-full bg-white/15 flex justify-center items-center">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/testimonials/testimonials-1.jpg"
+                                alt="" width="80px" height="80px" class="rounded-full">
+                        </div>
+                        <div>
+                            <p class="mt-2 ml-[-1.9rem] text-[#f8f8f8] text-2xl font-semibold">Saul Goodman</p>
+                            <p class="mt-1 ml-[-1rem] text-[#dddddd] text-base font-[400]">Ceo & Founder </p>
+                        </div>
+                    </div>
+                    <div class="lg:px-52 mt-4 text-center px-6 italic text-lg text-[#dddddd] font-[600]">
+                        <p><box-icon name='quote-alt-left' type='solid' color='#8f8683'></box-icon> Proin iaculis purus
+                            consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                            semper.<sub><box-icon name='quote-alt-right' type='solid' color='#8f8683'></box-icon></sub>
+                        </p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out flex flex-col items-center justify-center h-96"
+                    data-carousel-item>
+                    <div>
+                        <div class="w-[95px] h-[95px] rounded-full bg-white/15 flex justify-center items-center">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/testimonials/testimonials-2.jpg"
+                                alt="" width="80px" height="80px" class="rounded-full">
+                        </div>
+                        <div>
+                            <p class="mt-2 ml-[-1rem] text-[#f8f8f8] text-2xl font-semibold">Sara Wilsson</p>
+                            <p class="mt-1 ml-[0.9rem] text-[#dddddd] text-base font-[400]">Designer</p>
+                        </div>
+                    </div>
+                    <div class="lg:px-52 mt-4 text-center px-6 italic text-lg text-[#dddddd] font-[600]">
+                        <p><box-icon name='quote-alt-left' type='solid' color='#8f8683'></box-icon> Export tempor illum
+                            tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum
+                            velit fore
+                            eram velit sunt aliqua noster fugiat irure amet legam anim culpa.<sub><box-icon
+                                    name='quote-alt-right' type='solid' color='#8f8683'></box-icon></sub>
+                        </p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out flex flex-col items-center justify-center h-96"
+                    data-carousel-item>
+                    <div>
+                        <div class="w-[95px] h-[95px] rounded-full bg-white/15 flex justify-center items-center">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/testimonials/testimonials-3.jpg"
+                                alt="" width="80px" height="80px" class="rounded-full">
+                        </div>
+                        <div>
+                            <p class="mt-2 ml-[-0.5rem] text-[#f8f8f8] text-2xl font-semibold">Jena Karlis</p>
+                            <p class="mt-1 ml-[0.2rem] text-[#dddddd] text-base font-[400]">Store Owner </p>
+                        </div>
+                    </div>
+                    <div class="lg:px-52 mt-4 text-center px-6 italic text-lg text-[#dddddd] font-[600]">
+                        <p><box-icon name='quote-alt-left' type='solid' color='#8f8683'></box-icon> Enim nisi quem
+                            export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+                            labore quem
+                            eram duis noster aute amet eram fore quis sint minim.<sub><box-icon name='quote-alt-right'
+                                    type='solid' color='#8f8683'></box-icon></sub>
+                        </p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out flex flex-col items-center justify-center h-96"
+                    data-carousel-item>
+                    <div>
+                        <div class="w-[95px] h-[95px] rounded-full bg-white/15 flex justify-center items-center">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/testimonials/testimonials-4.jpg"
+                                alt="" width="80px" height="80px" class="rounded-full">
+                        </div>
+                        <div>
+                            <p class="mt-2 ml-[-1.9rem] text-[#f8f8f8] text-2xl font-semibold">Matt Brandon</p>
+                            <p class="mt-1 ml-[0.5rem] text-[#dddddd] text-base font-[400]">Freelancer </p>
+                        </div>
+                    </div>
+                    <div class="lg:px-52 mt-4 text-center px-6 italic text-lg text-[#dddddd] font-[600]">
+                        <p><box-icon name='quote-alt-left' type='solid' color='#8f8683'></box-icon> Fugiat enim eram
+                            quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor
+                            enim duis
+                            veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.<sub><box-icon
+                                    name='quote-alt-right' type='solid' color='#8f8683'></box-icon></sub>
+                        </p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out flex flex-col items-center justify-center h-96"
+                    data-carousel-item>
+                    <div>
+                        <div class="w-[95px] h-[95px] rounded-full bg-white/15 flex justify-center items-center">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/testimonials/testimonials-5.jpg"
+                                alt="" width="80px" height="80px" class="rounded-full">
+                        </div>
+                        <div>
+                            <p class="mt-2 ml-[-1rem] text-[#f8f8f8] text-2xl font-semibold">John Larson</p>
+                            <p class="mt-1 text-[#dddddd] text-base font-[400]">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <div class="lg:px-52 mt-4 text-center px-6 italic text-lg text-[#dddddd] font-[600]">
+                        <p><box-icon name='quote-alt-left' type='solid' color='#8f8683'></box-icon> Quis quorum aliqua
+                            sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore
+                            duis sunt
+                            culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.<sub><box-icon
+                                    name='quote-alt-right' type='solid' color='#8f8683'></box-icon></sub>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div
+                class="absolute z-30 flex -translate-x-1/2 lg:bottom-20 bottom-5 left-1/2 space-x-2 rtl:space-x-reverse">
+                <button type="button" class="w-3 bg-yellow-500 h-3 rounded-full" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 bg-yellow-500 h-3 rounded-full" aria-current="false"
+                    aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 bg-yellow-500 h-3 rounded-full" aria-current="false"
+                    aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 bg-yellow-500 h-3 rounded-full" aria-current="false"
+                    aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 bg-yellow-500 h-3 rounded-full" aria-current="false"
+                    aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+        </div>
+    </section>
+    <!-- crousel section end -->
+
+    <section class="h-96"></section>
+
+    <!-- portfolio section start-->
+    <section id="portfolio">
+        <div class="text-center mt-28 mb-14">
+            <div class="relative text-center">
+                <p
+                    class="absolute w-full flex justify-center items-center lg:text-5xl text-[#eef0f2;] font-bold lg:md:text-6xl text-[#eef0f2;] font-bold max-sm:text-4xl text-[#eef0f2;] font-bold">
+                    MY PORTFOLIO</p>
+                <p
+                    class="absolute w-full flex justify-center items-center max-sm:mt-4 lg:md:mt-6 font-bold lg:text-3xl  text-[#3b434a]  md:text-3xl max-sm:text-2xl">
+                    MY PORTFOLIO
+                </p>
+            </div>
+            <br>
+            <p class="pt-16 text-[#444444] text-[18px]">Sit sint consectetur velit quisquam cupiditate impedit suscipit
+                alias</p>
+        </div>
+    </section>
+    <!-- tablist start -->
+    <div role="tablist" class="tabs tabs-lifted">
+        <input type="radio" name="my_tabs_2" role="tab"
+            class="tab max-sm:ml-[2.5rem] lg:ml-[35rem] border-2 border-yellow-500 text-yellow-500 flex items-center justify-center"
+            aria-label=" ALL" />
+        <div role="tablist" class="tab-content mt-10 ">
+            <section
+                class="lg:h-[68rem] w-full grid max-sm:grid-cols-1 lg:grid-cols-3 lg:px-28 lg:py-10 gap-8 lg:grid-rows-12 max-sm:grid-rows-9 lg:gap-y-8 max-sm:ml-[-1rem]">
+                <div class="group relative overflow-hidden lg:row-span-4 overflow-hidden">
+                    <div class=" flex items-center justify-center">
+                        <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-1.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden row-span-3 overflow-hidden">
+                    <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-2.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class=" row-span-12 grid grid-rows-4 gap-8 overflow-hidden">
+                    <div class="group relative overflow-hidden h-40 overflow-hidden">
+                        <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-3.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="" height="100%">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="group relative  overflow-hidden mt-[-3.2rem]">
+                        <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-4.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="group relative  overflow-hidden h-50 ">
+                        <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-7.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="" height="100%">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="group relative overflow-hidden mt-[-1rem]">
+                        <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-8.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden col-start-2 row-span-4 overflow-hidden">
+                    <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-9.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="group relative overflow-hidden row-span-7 col-start-2 row-start-4 overflow-hidden">
+                    <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-5.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="group relative overflow-hidden row-span-7 col-start-1 row-start-5 ">
+                    <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-6.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+        </div>
+
+        <input type="radio" name="my_tabs_2" role="tab"
+            class="tab  hover:border-2 hover:border-yellow-500 hover:text-yellow-500 h-8 w-16  flex items-center justify-center"
+            aria-label="APP" checked />
+        <div role="tabpanel" class="tab-content p-6">
+            <div class="bg-white py-6 sm:py-8 lg:py-12 lg:px-28 lg:py-10">
+                <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                    <div class="grid max-sm:h-96 grid-cols-3 gap-4 max-sm:grid-cols-1 md:gap-6 xl:gap-8">
+                        <!-- image - start -->
+                        <a href="#"
+                            class="group relative flex lg:h-48 items-end justify-end overflow-hidden bg-gray-100 shadow-lg md:h-96">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-5.jpg"
+                                loading="lazy" alt="Photo by Minh Pham"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+                            <div
+                                class=" h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- image - end -->
+
+                        <!-- image - start -->
+                        <a href="#"
+                            class="group relative flex lg:h-48 items-end justify-end overflow-hidden bg-gray-100 shadow-lg md:h-96">
+                            <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-1.jpg"
+                                loading="lazy" alt="Photo by Lorenzo Herrera"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+                            <div
+                                class=" h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- image - end -->
+
+                        <!-- image - start -->
+                        <a href="#"
+                            class="group relative flex lg:h-48 items-end justify-end overflow-hidden bg-gray-100 shadow-lg md:h-96">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-7.jpg"
+                                loading="lazy" alt="Photo by Magicle"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+                            <div class=" h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- image - end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="radio" name="my_tabs_2" role="tab"
+            class="tab hover:border-2 hover:border-yellow-500 hover:text-yellow-500 h-8 w-16  flex items-center justify-center"
+            aria-label="CARD" />
+        <div role="tabpanel" class="tab-content bordertab-content  p-6">
+            <div class="bg-white py-6 sm:py-8 lg:py-12 lg:px-28 lg:py-10">
+                <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                    <div class="grid grid-cols-3 lg:grid-rows-2 gap-4 max-sm:grid-cols-1 md:gap-6 xl:gap-8">
+                        <!-- image - start -->
+                        <a href="#"
+                            class="group relative flex lg:h-48 items-end justify-end overflow-hidden bg-gray-100 shadow-lg md:h-96">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-5.jpg"
+                                loading="lazy" alt="Photo by Minh Pham"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+                            <div
+                                class=" h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- image - end -->
+
+                        <!-- image - start -->
+                        <a href="#"
+                            class="row-span-2 group relative flex lg:h-full items-end justify-end overflow-hidden bg-gray-100 shadow-lg md:h-96">
+                            <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-1.jpg"
+                                loading="lazy" alt="Photo by Lorenzo Herrera"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+                            <div
+                                class=" h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- image - end -->
+
+                        <!-- image - start -->
+                        <a href="#"
+                            class="group relative flex lg:h-48 items-end justify-end overflow-hidden bg-gray-100 shadow-lg md:h-96">
+                            <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-7.jpg"
+                                loading="lazy" alt="Photo by Magicle"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+                            <div class=" h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- image - end -->
+                    </div>
+                </div>
+            </div>        </div>
+
+        <input type="radio" name="my_tabs_2" role="tab"
+            class="tab hover:border-2 hover:border-yellow-500 hover:text-yellow-500 h-8 w-16  flex items-center justify-center"
+            aria-label="WEB" />
+        <div role="tabpanel" class="tab-content p-6">
+            <section
+                class="lg:h-[68rem] w-full grid max-sm:grid-cols-1 lg:grid-cols-3 lg:px-28 lg:py-10 gap-8 lg:grid-rows-12 lg:gap-y-8 max-sm:ml-[-1rem]">
+                <div class="group relative overflow-hidden row-span-4 overflow-hidden">
+                    <div class=" flex items-center justify-center">
+                        <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-1.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden row-span-3 overflow-hidden">
+                    <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-2.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class=" row-span-12 grid grid-rows-4 gap-8 overflow-hidden">
+                    <div class="group relative overflow-hidden h-40 overflow-hidden">
+                        <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-3.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="" height="100%">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="group relative overflow-hidden mt-[-1rem]">
+                        <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-8.jpg"
+                            loading="lazy" alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            alt="">
+                            <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-[#ffffff]">APP</h3>
+                                    <div class="flex gap-4">
+                                        <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden col-start-2 row-span-4 overflow-hidden">
+                    <img src="https://bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-9.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="group relative overflow-hidden row-span-7 col-start-1 row-start-5 ">
+                    <img src="https://www.bootstrapmade.com/demo/templates/Laura/assets/img/portfolio/portfolio-6.jpg"
+                        loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                        alt="">
+                        <div class="bottom-0 h-16 w-full p-6 absolute hidden group-hover:block group-hover:bg-black/[0.3] transition transition-all ease-in-out duration-700">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[#ffffff]">APP</h3>
+                                <div class="flex gap-4">
+                                    <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- portfolio section end-->
+
+    <!-- Pricing section start -->
+    <section>
+        <div class="text-center mt-28 mb-14">
+            <div class="relative text-center">
+                <p
+                    class="absolute w-full flex justify-center items-center lg:text-6xl text-[#eef0f2;] font-bold lg:md:text-6xl text-[#eef0f2;] font-bold max-sm:text-4xl text-[#eef0f2;] font-bold">
+                    PRICING </p>
+                <p
+                    class="absolute max-sm:mt-4 w-full flex justify-center items-center lg:md:mt-8 font-bold lg:text-4xl  text-[#3b434a] md:text-3xl max-sm:text-2xl">
+                    PRICING
+                </p>
+            </div>
+            <br>
+            <p class="pt-16 text-[#444444] text-[18px]">Sit sint consectetur velit quisquam cupiditate impedit suscipit
+                alias</p>
+        </div>
+    </section>
+    <section
+        class="grid lg:grid-cols-4 max-sm:grid-cols-1 lg:px-28 gap-6 max-sm:gap-4 h-[32rem] lg:px-28 lg:py-10 max-sm:px-6 max-sm:py-2">
+        <!-- first price-box -->
+        <div
+            class="max-sm:h-[25rem] relative bg-[#fff] h-full border-[1px] rounded-lg border-[#f2f2f2] shadow shadow-[0px 0px 4px rgba(0, 0, 0, 0.12)]">
+            <div class="bg-[#f8f8f8] p-[20px] text-center text-[#7f7f7f] text-[18px] font-semibold  tracking-normal">
+                Free
+            </div>
+            <div class="flex flex-1 flex-col">
+
+                <div class="py-2 text-center text-2xl font-bold text-gray-800"><span class="text-2xl text-[#ffb727]">$
+                        <sub class="text-4xl text-[#ffb727]">0</sub>
+                        <sub class="text-gray-200 font-normal">/ month</sub></span></div>
+                <p class="mx-auto py-2 text-center text-gray-500">Aida dere</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nec feugiat nisl</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nulla at volutpat dola</p>
+                <p class="mx-auto py-2 text-center text-[#cccccc]"><del>Pharetra massa</del></p>
+                <p class="mx-auto py-2  text-center text-[#cccccc]"><del>Massa ultricies mi</del></p>
+            </div>
+            <div
+                class="absolute bottom-0 w-full bg-[#f8f8f8] py-5 text-center text-gray-600 text-sm font-semibold uppercase tracking-widest text-white">
+                <button class="border  px-8 py-2 rounded text-white bg-[#ffb727]">Buy Now</button>
+            </div>
+        </div>
+        <!-- second price-box -->
+        <div
+            class="max-sm:h-[25rem] relative bg-[#fff] h-full border-[1px] rounded-lg border-[#f2f2f2] shadow shadow-[0px 0px 4px rgba(0, 0, 0, 0.12)]">
+            <div
+                class=" bg-[#ffb727] overflow-hidden p-[20px] rounded-t-lg text-center text-[#ffffff] text-[18px] font-semibold  tracking-normal">
+                Business
+            </div>
+            <div class="flex flex-1 flex-col">
+
+                <div class="py-2 text-center text-2xl font-bold text-gray-800"><span class="text-2xl text-[#ffb727]">$
+                        <sub class="text-4xl text-[#ffb727]">19 </sub>
+                        <sub class="text-gray-200 font-normal">/ month</sub></span></div>
+                <p class="mx-auto py-2 text-center text-gray-500">Aida dere</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nec feugiat nisl</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nulla at volutpat dola</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Pharetra massa</p>
+                <p class="mx-auto py-2  text-center text-[#cccccc]"><del>Massa ultricies mi</del></p>
+            </div>
+            <div
+                class="absolute bottom-0 w-full bg-[#f8f8f8] py-5 text-center text-gray-600 text-sm font-semibold uppercase tracking-widest text-white">
+                <button class="border  px-8 py-2 rounded text-white bg-[#ffb727]">Buy Now</button>
+            </div>
+        </div>
+        <!-- third price-box -->
+        <div
+            class="max-sm:h-[25rem] relative bg-[#fff] h-full border-[1px] rounded-lg border-[#f2f2f2] shadow shadow-[0px 0px 4px rgba(0, 0, 0, 0.12)]">
+            <div class="bg-[#f8f8f8] p-[20px] text-center text-[#7f7f7f] text-[18px] font-semibold  tracking-normal">
+                Developer
+            </div>
+            <div class="flex flex-1 flex-col">
+
+                <div class="py-2 text-center text-2xl font-bold text-gray-800"><span class="text-2xl text-[#ffb727]">$
+                        <sub class="text-4xl text-[#ffb727]">29</sub>
+                        <sub class="text-gray-200 font-normal">/ month</sub></span></div>
+                <p class="mx-auto py-2 text-center text-gray-500">Aida dere</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nec feugiat nisl</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nulla at volutpat dola</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Pharetra massa</p>
+                <p class="mx-auto py-2  text-center text-gray-500">Massa ultricies mi</p>
+            </div>
+            <div
+                class="absolute bottom-0 w-full bg-[#f8f8f8] py-5 text-center text-gray-600 text-sm font-semibold uppercase tracking-widest text-white">
+                <button class="border  px-8 py-2 rounded text-white bg-[#ffb727]">Buy Now</button>
+            </div>
+        </div>
+        <!-- fourth price-box -->
+        <div
+            class="max-sm:h-[25rem] relative overflow-hidden bg-[#fff] h-full border-[1px] rounded-lg border-[#f2f2f2] shadow shadow-[0px 0px 4px rgba(0, 0, 0, 0.12)]">
+
+            <div
+                class="advance absolute bg-[#ffb727]  top-[18px] right-[-68px] z-[1] rotate-45 text-center text-white text-sm w-[200px] py-1">
+                Advanced</div>
+
+            <div class="bg-[#f8f8f8] p-[20px] text-center text-[#7f7f7f] text-[18px] font-semibold  tracking-normal">
+                Ultimate
+            </div>
+            <div class="flex flex-1 flex-col">
+
+                <div class="py-2 text-center text-2xl font-bold text-gray-800"><span class="text-2xl text-[#ffb727]">$
+                        <sub class="text-4xl text-[#ffb727]">49</sub>
+                        <sub class="text-gray-200 font-normal">/ month</sub></span></div>
+                <p class="mx-auto py-2 text-center text-gray-500">Aida dere</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nec feugiat nisl</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Nulla at volutpat dola</p>
+                <p class="mx-auto py-2 text-center text-gray-500">Pharetra massa</p>
+                <p class="mx-auto py-2  text-center text-gray-500">Massa ultricies mi</p>
+            </div>
+            <div
+                class="absolute bottom-0 w-full bg-[#f8f8f8] py-5 text-center text-gray-600 text-sm font-semibold uppercase tracking-widest text-white">
+                <button class="border  px-8 py-2 rounded text-white bg-[#ffb727]">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing section end -->
+
+    <!-- contact section start -->
+    <section id="contact">
+        <div class="text-center mt-20 mb-14 max-sm:mt-[75rem]">
+            <div class="relative text-center">
+                <p
+                    class="absolute w-full flex justify-center items-center lg:text-6xl text-[#eef0f2;] font-bold lg:md:text-6xl text-[#eef0f2;] font-bold max-sm:text-4xl text-[#eef0f2;] font-bold">
+                    CONTACT ME</p>
+                <p
+                    class="absolute max-sm:mt-4 w-full flex justify-center items-center lg:md:mt-8 font-bold lg:text-4xl  text-[#3b434a] md:text-3xl max-sm:text-2xl">
+                    CONTACT ME
+                </p>
+            </div>
+            <br>
+            <p class="pt-16 text-[#444444] text-[18px]">Sit sint consectetur velit quisquam cupiditate impedit suscipit
+                alias</p>
+        </div>
+    </section>
+    <section class="bg-white dark:bg-gray-900 mt-[-1rem] mb-[2rem]">
+        <div class="container  lg:px-20 lg:py-0 max-sm:px-6 max-sm:py-2 mx-auto">
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 grid-rows-1 max-sm:grid-rows-2">
+                <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 grid-rows-2 max-sm:grid-rows-3">
+                    <div class="lorem-box flex flex-col justify-center items-center rounded-sm lg:col-span-2">
+                        <div
+                            class="text-[#ffb727] w-[52px] h-[52px] bg-[#fff4df] rounded-[50%] flex justify-center items-center">
+                            <i class="bx bx-share-alt text-[1.5rem]" style="color:#ffb727;"></i>
+                        </div>
+                        <h3
+                            class="text-[#777777] text-[20px] font-[700] mt-1   hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Social Profiles</h3>
+                        <div class="flex gap-4 max-sm:gap-1">
+                            <div
+                                class="flex justify-center items-center max-sm:w-10 max-sm:h-10 w-12 h-12 border-[1px] border-[#dde1e4] text-[18px] rounded-full text-[#687683] mt-1.5 transition-colors duration-300 transform hover:bg-[#ffb727] hover:text-white">
+                                <i class="bi bi-twitter mb-1"></i>
+                            </div>
+                            <div
+                                class="flex justify-center items-center max-sm:w-10 max-sm:h-10 w-12 h-12 border-[1px] border-[#dde1e4] text-[18px] rounded-full text-[#687683] mt-1.5 transition-colors duration-300 transform hover:bg-[#ffb727] hover:text-white">
+                                <i class="bi bi-facebook mb-1"></i>
+                            </div>
+                            <div
+                                class="flex justify-center items-center max-sm:w-10 max-sm:h-10 w-12 h-12 border-[1px] border-[#dde1e4] text-[18px] rounded-full text-[#687683] mt-1.5 transition-colors duration-300 transform hover:bg-[#ffb727] hover:text-white">
+                                <i class="bi bi-instagram mb-1"></i>
+                            </div>
+                            <div
+                                class="flex justify-center items-center max-sm:w-10 max-sm:h-10 w-12 h-12 border-[1px] border-[#dde1e4] text-[24px] rounded-full text-[#687683] mt-1.5 transition-colors duration-300 transform hover:bg-[#ffb727] hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
+                                    <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063"/>
+                                  </svg>
+                            </div>
+                            <div
+                                class="flex justify-center items-center max-sm:w-10 max-sm:h-10 w-12 h-12 border-[1px] border-[#dde1e4] text-[18px] rounded-full text-[#687683] mt-1.5 transition-colors duration-300 transform hover:bg-[#ffb727] hover:text-white">
+                                <i class="bi bi-linkedin mb-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lorem-box flex flex-col justify-center items-center rounded-sm ">
+                        <div
+                            class="text-[#ffb727] font-[400] w-[52px] h-[52px] bg-[#fff4df] rounded-[50%] flex justify-center items-center">
+                            <i class="bx bx-envelope text-[1.5rem]" style="color: #ffb727;"></i>
+                        </div>
+                        <h3
+                            class="text-[#777777] text-[20px] font-[700] mt-1  hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Email Me</h3>
+                        <p class="text-[#444444] text-[16px] mt-1">contact@example.com</p>
+                    </div>
+                    <div class="lorem-box flex flex-col justify-center items-center rounded-sm ">
+                        <div
+                            class="text-[#ffb727] font-[400] w-[52px] h-[52px] bg-[#fff4df] rounded-[50%] flex justify-center items-center">
+                            <i class="bx bx-phone-call text-[1.5rem]" style="color: #ffb727;"></i>
+                        </div>
+                        <h3
+                            class="text-[#777777] text-[20px] font-[700] mt-1  hover:text-[#ffb727] hover:transition hover:ease-in hover:duration-300">
+                            Call Me</h3>
+                        <p class="text-[#444444] text-[16px] mt-1">+1 5589 55488 55</p>
+                    </div>
+                </div>
+
+                <div class="lorem-box max-sm:p-2 max-sm:py-6 lg:p-6 lg:py-4 rounded-sm md:p-8">
+                    <form>
+                        <div class="-mx-2 md:items-center md:flex">
+                            <div class="flex-1 px-2">
+                                <input type="text" placeholder="Your Name "
+                                    class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-500 bg-white border border-gray-200 rounded-sm  focus:border-blue-200 dark:focus:border-blue-200  focus:outline-none " />
+                            </div>
+
+                            <div class="flex-1 px-2 mt-4 md:mt-0">
+
+                                <input type="text" placeholder="Your Email"
+                                    class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-500 bg-white border border-gray-200 rounded-sm dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+
+                            <input type="email" placeholder="Subject"
+                                class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-500 bg-white border border-gray-200 rounded-sm dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                        </div>
+
+                        <div class="w-full mt-4">
+
+                            <textarea
+                                class="block w-full lg:h-[10rem] max-sm:h-24 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-500 bg-white border border-gray-200 rounded-sm dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="w-full flex justify-center items-center">
+                            <button
+                                class="px-6 py-2.5 mt-4 mb-3 text-base  text-white capitalize transition-colors duration-300 transform bg-[#ffb727] rounded hover:bg-[#ffc85a] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                Send message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer start -->
+    <section class="w-full h-[25rem] mt-6 relative">
+        <!-- bg-image -->
+        <article
+            class="w-full h-full absolute bg-cover bg-center bg-[url(https://bootstrapmade.com/demo/templates/Laura/assets/img/footer-bg.jpg)]">
+        </article>
+        <!-- content -->
+        <article class="absolute w-full h-full bg-black/[0.6]">
+            <div class=" w-full h-full flex flex-col justify-center items-center">
+                <p class="satisfy-regular text-white text-[36px] font-semibold">Laura Thomson</p>
+                <p class="text-[#eeeeee] text-[15px] italic mt-3 text-center">Et aut eum quis fuga eos sunt ipsa nihil.
+                    Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+                <div class="flex gap-2 mt-6">
+                    <div
+                        class="flex justify-center items-center transition-colors duration-300 transform bg-[#ffb727] hover:bg-[#f3a200] w-[36px] h-[36px] text-[16px] rounded-full text-[#ffffff] mt-1.5">
+                        <i class="bi bi-twitter mb-1"></i>
+                    </div>
+                    <div
+                        class="flex justify-center items-center  transition-colors duration-300 transform bg-[#ffb727] hover:bg-[#f3a200] w-[36px] h-[36px] text-[16px] rounded-full text-[#ffffff] mt-1.5">
+                        <i class="bi bi-facebook mb-1"></i>
+                    </div>
+                    <div
+                        class="flex justify-center items-center  transition-colors duration-300 transform bg-[#ffb727] hover:bg-[#f3a200] w-[36px] h-[36px] text-[16px] rounded-full text-[#ffffff] mt-1.5">
+                        <i class="bi bi-instagram mb-1"></i>
+                    </div>
+                    <div
+                        class="flex justify-center items-center  transition-colors duration-300 transform bg-[#ffb727] hover:bg-[#f3a200] w-[36px] h-[36px] text-[16px] rounded-full text-[#ffffff] mt-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
+                                <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063"/>
+                              </svg>
+                    </div>
+                    <div
+                        class="flex justify-center items-center  transition-colors duration-300 transform bg-[#ffb727] hover:bg-[#f3a200] w-[36px] h-[36px] text-[16px] rounded-full text-[#ffffff] mt-1.5">
+                        <i class="bi bi-linkedin mb-1"></i>
+                    </div>
+                </div>
+                <p class="text-white text-center mt-6 text-[15px] leading-6">&copy; Copyright <strong>Laura.</strong>
+                    All Rights Reserved <br>
+                    <span class="text-[14px]">
+                        Designed by <span class="text-[#ffb727]">BootstrapMade</span>
+                    </span>
+                </p>
+            </div>
+
+        </article>
+    </section>
+    <!-- footer end -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbite  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- daisy cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
